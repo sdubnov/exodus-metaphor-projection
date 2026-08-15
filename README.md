@@ -44,6 +44,7 @@ After running the demo scripts, see [docs/analysis_example.md](docs/analysis_exa
 GitHub's normal file viewer does not execute HTML or Plotly. For online interactive viewing, enable GitHub Pages for this repository using the `main` branch and `/docs` folder, then open:
 
 - <https://sdubnov.github.io/exodus-metaphor-projection/analysis_example.html>
+- <https://sdubnov.github.io/exodus-metaphor-projection/figures/semantic_baseline_3d.html>
 - <https://sdubnov.github.io/exodus-metaphor-projection/figures/religious_metaphor_projection.html>
 - <https://sdubnov.github.io/exodus-metaphor-projection/figures/modern_metaphor_projection.html>
 

@@ -29,6 +29,7 @@ GitHub's normal `blob` file viewer does not execute HTML or Plotly. To view the 
 
 - [Religious metaphor projection](https://sdubnov.github.io/exodus-metaphor-projection/figures/religious_metaphor_projection.html)
 - [Modern metaphor projection](https://sdubnov.github.io/exodus-metaphor-projection/figures/modern_metaphor_projection.html)
+- [3D semantic baseline](https://sdubnov.github.io/exodus-metaphor-projection/figures/semantic_baseline_3d.html)
 - [HTML walkthrough](https://sdubnov.github.io/exodus-metaphor-projection/analysis_example.html)
 
 The hosted plots were generated from the local Exodus research corpus, but passage hover text is intentionally hidden so the repository does not redistribute the source texts. For local use with hover text, create a private manifest and run the scripts to `outputs/figures/`.
@@ -41,6 +42,8 @@ Each point is a text chunk or paragraph. The color indicates the source text. In
 
 The metaphor projection plots show selected Exodus-corpus texts projected through a learned two-dimensional contrastive space trained from manually curated liberty-related anchor pairs. These plots ask whether passages become comparable under a shared metaphorical vocabulary of bondage, deliverance, law, covenant, trial, and self-rule.
 
+The 3D semantic baseline shows the same local historical corpus embedded with the sentence-transformer model and reduced to three principal components with PCA. It is useful as a broad, model-internal view of semantic proximity, but it is not anchor-guided and should not be interpreted as the main metaphor projection.
+
 ## Interpretation For Paper Revision
 
 The projections illustrate the central methodological claim of the study: manually curated metaphor anchors can define an interpretive space for comparing passages across source texts. The anchor-guided projection reorganizes passages according to a curated metaphorical vocabulary of bondage, deliverance, law, covenant, trial, and self-rule.
@@ -50,6 +53,10 @@ In a local historical-corpus run, Exodus and Surah Al-Qasas can be inspected for
 These visualizations are exploratory and interpretive rather than conclusive. They identify candidate affinities for close reading and motivate future robustness studies over anchor choice, corpus composition, random seed, and projection stability.
 
 ## Possible Captions
+
+### 3D Semantic Baseline
+
+Paragraphs from the local historical Exodus corpus are embedded with a sentence-transformer model and projected into three dimensions with PCA. The plot provides an exploratory view of broad semantic proximity among texts before applying the anchor-guided metaphor projection. It is included as a diagnostic and interpretive baseline rather than as a formal validation result.
 
 ### Religious Metaphor Projection
 

@@ -44,9 +44,21 @@ python scripts/run_metaphor_projection_demo.py \
   --hide-hover-text
 ```
 
+The 3D semantic baseline was generated with:
+
+```bash
+python scripts/run_3d_baseline_demo.py \
+  --manifest local_manifests/full.local.json \
+  --output docs/figures/semantic_baseline_3d.html \
+  --seed 42 \
+  --local-files-only \
+  --max-chunks-per-text 300 \
+  --hide-hover-text
+```
+
 The `--hide-hover-text` flag is important for the public GitHub Pages version. It removes passage text from Plotly hover labels, so the committed HTML files contain point coordinates and source labels but not the full underlying corpus passages.
 
-The same two commands are also packaged as:
+The same commands are also packaged as:
 
 ```bash
 bash scripts/run_historical_figures.sh
