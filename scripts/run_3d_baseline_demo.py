@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run a 3D semantic embedding baseline demo."""
+"""Run a 3D unguided embedding baseline demo."""
 
 from __future__ import annotations
 
@@ -18,7 +18,7 @@ from exodus_metaphor.projection import flatten_loaded_texts
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--manifest", default="corpus_manifest.example.json")
-    parser.add_argument("--output", default="outputs/figures/semantic_baseline_3d.html")
+    parser.add_argument("--output", default="outputs/figures/embedding_baseline_3d.html")
     parser.add_argument("--model", default="all-MiniLM-L6-v2")
     parser.add_argument("--local-files-only", action="store_true")
     parser.add_argument("--hide-hover-text", action="store_true")
@@ -48,7 +48,7 @@ def main():
         labels,
         texts,
         args.output,
-        "3D Semantic Baseline: Sentence Embeddings + PCA",
+        "3D Unguided Embedding Baseline: Sentence Embeddings + PCA",
         "PC1",
         "PC2",
         "PC3",

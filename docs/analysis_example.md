@@ -37,7 +37,7 @@ The same scripts can also be run on local research corpora by creating a new man
 
 Each point is a text chunk or paragraph. The color indicates the source text. In private/local runs, hovering over a point can reveal the corresponding passage. In the hosted GitHub Pages figures, passage text is hidden to avoid redistributing the local research corpus.
 
-The 3D semantic baseline shows the local historical corpus embedded with the sentence-transformer model and reduced to three principal components with PCA. It is useful as a broad, model-internal view of semantic proximity, but it is not anchor-guided and should not be interpreted as the main metaphor projection.
+The 3D unguided embedding baseline shows the local historical corpus embedded with the sentence-transformer model and reduced to three principal components with PCA. It is useful as a broad, model-internal view of distributional proximity, but it is not anchor-guided and should not be interpreted as the main metaphor projection.
 
 The two metaphor projection plots show selected Exodus-corpus texts projected through a learned two-dimensional contrastive space trained from manually curated liberty-related anchor pairs. These plots ask whether passages become comparable under a shared metaphorical vocabulary of bondage, deliverance, law, covenant, trial, and self-rule.
 
@@ -51,9 +51,9 @@ These visualizations are exploratory and interpretive rather than conclusive. Th
 
 ## Possible Captions
 
-### 3D Semantic Baseline
+### 3D Unguided Embedding Baseline
 
-Paragraphs from the local historical Exodus corpus are embedded with a sentence-transformer model and projected into three dimensions with PCA. The plot provides an exploratory view of broad semantic proximity among texts before applying the anchor-guided metaphor projection. It is included as a diagnostic and interpretive baseline rather than as a formal validation result.
+Paragraphs from the local historical Exodus corpus are embedded with a sentence-transformer model and projected into three dimensions with PCA. The plot provides an exploratory view of broad distributional proximity among texts before applying the anchor-guided metaphor projection. It is included as a diagnostic and interpretive baseline rather than as a formal validation result.
 
 ### Religious Metaphor Projection
 

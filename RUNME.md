@@ -2,6 +2,8 @@
 
 The default commands use the small sample corpus included in GitHub. They are intended as smoke tests for the public reference implementation. They do not reproduce the hosted figures in `docs/figures/`, which were generated from a separate local historical corpus.
 
+The sample corpus is designed for a simple comparison: the unguided embedding baseline shows ordinary sentence-embedding structure, while the anchor-guided metaphor projection shows how the same passages move after training the projection on curated Exodus/liberty anchor pairs. The metaphor projection is not expected to preserve source-label clusters; it may bring passages from different files closer when they express related anchor themes.
+
 ## 1. Create Environment
 
 ```bash
@@ -10,26 +12,26 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## 2. Run The Semantic Baseline
+## 2. Run The Unguided Embedding Baseline
 
 ```bash
 python scripts/run_baseline_demo.py \
   --manifest corpus_manifest.example.json \
-  --output outputs/figures/semantic_baseline.html \
+  --output outputs/figures/embedding_baseline.html \
   --seed 42
 ```
 
 Expected result:
 
 - chunk counts printed in the terminal
-- `outputs/figures/semantic_baseline.html`
+- `outputs/figures/embedding_baseline.html`
 
 Optional 3D baseline:
 
 ```bash
 python scripts/run_3d_baseline_demo.py \
   --manifest corpus_manifest.example.json \
-  --output outputs/figures/semantic_baseline_3d.html \
+  --output outputs/figures/embedding_baseline_3d.html \
   --seed 42
 ```
 
@@ -83,7 +85,7 @@ After the sentence-transformer model has been downloaded once, you can avoid net
 
 ## 6. What This Demo Does Not Claim
 
-The demo reproduces the workflow, not the exact paper figures. The historical figures were exploratory and depended on local notebook state, random sampling, and manually exported Plotly images.
+The demo reproduces the workflow, not the exact paper figures. The historical figures were exploratory and depended on local notebook state, corpus availability, random sampling, and manually exported Plotly images.
 
 Some paper texts may not be redistributable. The public implementation therefore uses sample texts and lets users supply their own local corpus.
 

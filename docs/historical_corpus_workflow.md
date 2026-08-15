@@ -44,12 +44,12 @@ python scripts/run_metaphor_projection_demo.py \
   --hide-hover-text
 ```
 
-The 3D semantic baseline was generated with:
+The 3D unguided embedding baseline was generated with:
 
 ```bash
 python scripts/run_3d_baseline_demo.py \
   --manifest local_manifests/full.local.json \
-  --output docs/figures/semantic_baseline_3d.html \
+  --output docs/figures/embedding_baseline_3d.html \
   --seed 42 \
   --local-files-only \
   --max-chunks-per-text 300 \
