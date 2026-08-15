@@ -38,16 +38,17 @@ GitHub's normal `blob` file viewer does not execute HTML or Plotly. To view the 
 
 - [3D semantic baseline](https://sdubnov.github.io/exodus-metaphor-projection/figures/semantic_baseline_3d.html)
 - [2D semantic baseline](https://sdubnov.github.io/exodus-metaphor-projection/figures/semantic_baseline.html)
-- [Metaphor projection](https://sdubnov.github.io/exodus-metaphor-projection/figures/metaphor_projection.html)
+- [Religious metaphor projection](https://sdubnov.github.io/exodus-metaphor-projection/figures/religious_metaphor_projection.html)
+- [Modern metaphor projection](https://sdubnov.github.io/exodus-metaphor-projection/figures/modern_metaphor_projection.html)
 - [HTML walkthrough](https://sdubnov.github.io/exodus-metaphor-projection/analysis_example.html)
 
-For local use, run the scripts and open the generated files from `outputs/figures/`.
+The hosted plots were generated from the local Exodus research corpus, but passage hover text is intentionally hidden so the repository does not redistribute the source texts. For local use with hover text, create a private manifest and run the scripts to `outputs/figures/`.
 
 The same scripts can also be run on local research corpora by creating a new manifest that points to local `.txt` files. Those local manifests should not be committed if the underlying corpus cannot be redistributed.
 
 ## What The Graphs Represent
 
-Each point is a text chunk or paragraph. The color indicates the source text. Hovering over a point reveals the corresponding passage.
+Each point is a text chunk or paragraph. The color indicates the source text. In private/local runs, hovering over a point can reveal the corresponding passage. In the hosted GitHub Pages figures, passage text is hidden to avoid redistributing the local research corpus.
 
 The semantic baseline plots show ordinary MiniLM sentence embeddings projected with PCA. These plots ask whether the corpus is organized mainly by source, style, vocabulary, and genre before any metaphor-guided intervention.
 

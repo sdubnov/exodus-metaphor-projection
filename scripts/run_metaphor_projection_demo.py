@@ -24,6 +24,7 @@ def parse_args():
     parser.add_argument("--output", default="outputs/figures/metaphor_projection.html")
     parser.add_argument("--model", default="all-MiniLM-L6-v2")
     parser.add_argument("--local-files-only", action="store_true")
+    parser.add_argument("--hide-hover-text", action="store_true")
     parser.add_argument("--epochs", type=int, default=250)
     parser.add_argument("--max-chunks-per-text", type=int, default=80)
     parser.add_argument("--seed", type=int, default=42)
@@ -62,6 +63,7 @@ def main():
         "Anchor-Guided Metaphor Projection",
         "Metaphor axis 1",
         "Metaphor axis 2",
+        include_hover_text=not args.hide_hover_text,
     )
     print(f"Wrote {output}")
 

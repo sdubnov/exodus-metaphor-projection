@@ -107,7 +107,9 @@
 
   <p>
     Each point is a text chunk or paragraph. The color indicates the source text.
-    Hovering over a point reveals the corresponding passage.
+    In private/local runs, hovering over a point can reveal the corresponding passage.
+    In these hosted figures, passage text is hidden to avoid redistributing the local
+    research corpus.
   </p>
 
   <p>
@@ -123,15 +125,16 @@
     metaphorical vocabulary of bondage, deliverance, law, covenant, trial, and self-rule.
   </p>
 
-  <h2>Sample Corpus Demo</h2>
+  <h2>Exodus Corpus Demo</h2>
 
   <div class="figure">
     <iframe src="figures/semantic_baseline_3d.html"></iframe>
     <div class="caption">
       <strong>3D semantic baseline.</strong>
-      The sample corpus is embedded with MiniLM and projected with PCA into three
-      dimensions. This is the didactic counterpart to the paper's initial 3D baseline:
-      it shows the ordinary semantic geometry before metaphor-guided alignment.
+      The local Exodus research corpus is embedded with MiniLM and projected with
+      PCA into three dimensions. This is the didactic counterpart to the paper's
+      initial 3D baseline: it shows the ordinary semantic geometry before
+      metaphor-guided alignment.
     </div>
   </div>
 
@@ -139,19 +142,31 @@
     <iframe src="figures/semantic_baseline.html"></iframe>
     <div class="caption">
       <strong>2D semantic baseline.</strong>
-      The same sample corpus is projected into two PCA dimensions. This baseline
-      helps separate ordinary semantic/source organization from metaphor-guided
-      organization.
+      The same local corpus is projected into two PCA dimensions. This baseline helps
+      separate ordinary semantic/source organization from metaphor-guided organization.
     </div>
   </div>
 
   <div class="figure">
-    <iframe src="figures/metaphor_projection.html"></iframe>
+    <iframe src="figures/religious_metaphor_projection.html"></iframe>
     <div class="caption">
-      <strong>Metaphor projection.</strong>
-      The sample corpus is projected into a learned metaphor space trained from
-      curated liberty-related anchor pairs. The visualization demonstrates the
-      reusable workflow rather than reproducing a paper figure exactly.
+      <strong>Religious metaphor projection.</strong>
+      Exodus and Surah Al-Qasas are projected into a learned metaphor space trained
+      from curated liberty-related anchor pairs. The plot is an exploratory map of
+      candidate affinities around divine authority, oppression, trial, deliverance,
+      and the formation of a community under law.
+    </div>
+  </div>
+
+  <div class="figure">
+    <iframe src="figures/modern_metaphor_projection.html"></iframe>
+    <div class="caption">
+      <strong>Modern political metaphor projection.</strong>
+      Herzl, Martin Luther King Jr., and Frederick Douglass are projected into the
+      same anchor-guided metaphor space. The visualization supports exploratory
+      comparison of different transformations of Exodus-like liberty metaphors:
+      oppression, moral struggle, delayed justice, civic construction, and collective
+      realization.
     </div>
   </div>
 

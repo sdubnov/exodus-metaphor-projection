@@ -56,7 +56,10 @@ GitHub's normal file viewer does not execute HTML or Plotly. For online interact
 - <https://sdubnov.github.io/exodus-metaphor-projection/analysis_example.html>
 - <https://sdubnov.github.io/exodus-metaphor-projection/figures/semantic_baseline_3d.html>
 - <https://sdubnov.github.io/exodus-metaphor-projection/figures/semantic_baseline.html>
-- <https://sdubnov.github.io/exodus-metaphor-projection/figures/metaphor_projection.html>
+- <https://sdubnov.github.io/exodus-metaphor-projection/figures/religious_metaphor_projection.html>
+- <https://sdubnov.github.io/exodus-metaphor-projection/figures/modern_metaphor_projection.html>
+
+The hosted figures use the local Exodus research corpus but hide passage hover text to avoid redistributing source texts that may not be licensed for republication.
 
 ## Related Presentation
 

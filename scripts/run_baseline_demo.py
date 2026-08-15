@@ -21,6 +21,7 @@ def parse_args():
     parser.add_argument("--output", default="outputs/figures/semantic_baseline.html")
     parser.add_argument("--model", default="all-MiniLM-L6-v2")
     parser.add_argument("--local-files-only", action="store_true")
+    parser.add_argument("--hide-hover-text", action="store_true")
     parser.add_argument("--max-chunks-per-text", type=int, default=80)
     parser.add_argument("--seed", type=int, default=42)
     return parser.parse_args()
@@ -50,6 +51,7 @@ def main():
         "Semantic Baseline: Sentence Embeddings + PCA",
         "PC1",
         "PC2",
+        include_hover_text=not args.hide_hover_text,
     )
     print(f"Wrote {output}")
 
