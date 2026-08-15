@@ -1,5 +1,7 @@
 # Run The Exodus Metaphor Projection Demo
 
+The default commands use the small sample corpus included in GitHub. They are intended as smoke tests for the public reference implementation. They do not reproduce the hosted figures in `docs/figures/`, which were generated from a separate local historical corpus.
+
 ## 1. Create Environment
 
 ```bash

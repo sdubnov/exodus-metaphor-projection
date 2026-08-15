@@ -19,11 +19,11 @@ This repository provides a small, reusable implementation of the chapter's core 
 - project additional texts into the learned metaphor space
 - generate interactive HTML plots
 
-## Quick Start
+## Quick Start: Sample Smoke Test
 
 See [RUNME.md](RUNME.md).
 
-Minimal run:
+The default run uses the small sample corpus in `data/sample_corpus/`. It verifies installation, text loading, anchor projection, and Plotly export. It does not reproduce the hosted Exodus-corpus figures.
 
 ```bash
 python3 -m venv .venv
@@ -37,15 +37,15 @@ python scripts/run_metaphor_projection_demo.py \
   --seed 42
 ```
 
-## Analysis Example
+## Historical Analysis Example
 
-After running the demo scripts, see [docs/analysis_example.md](docs/analysis_example.md) for an interpretation guide. A local HTML walkthrough is available at [docs/analysis_example.html](docs/analysis_example.html), but the embedded interactive plots require generated files in `outputs/figures/`.
+The hosted analysis page presents figures generated from the local historical Exodus corpus, not from the sample corpus committed to GitHub. See [docs/analysis_example.md](docs/analysis_example.md) for an interpretation guide and [docs/historical_corpus_workflow.md](docs/historical_corpus_workflow.md) for the commands used to generate the hosted figures.
 
 GitHub's normal file viewer does not execute HTML or Plotly. For online interactive viewing, enable GitHub Pages for this repository using the `main` branch and `/docs` folder, then open the integrated walkthrough:
 
 - <https://sdubnov.github.io/exodus-metaphor-projection/analysis_example.html>
 
-The hosted figures use the local Exodus research corpus but hide passage hover text to avoid redistributing source texts that may not be licensed for republication. Running the code on the limited sample data included in this repository will verify the workflow, but it will not reproduce the hosted Exodus-corpus figures. See [docs/historical_corpus_workflow.md](docs/historical_corpus_workflow.md) for the exact commands used to generate them.
+The hosted figures use the local Exodus research corpus but hide passage hover text to avoid redistributing source texts that may not be licensed for republication. Running the code on the limited sample data included in this repository will verify the workflow, but it will not reproduce the hosted Exodus-corpus figures.
 
 ## Related Presentation
 
