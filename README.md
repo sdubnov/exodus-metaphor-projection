@@ -60,7 +60,9 @@ GitHub's normal file viewer does not execute HTML or Plotly. For online interact
 
 ## Related Presentation
 
-- Exodus II presentation video: <https://www.youtube.com/live/7ndC6G7HyCU>
+[![Exodus II presentation video](https://img.youtube.com/vi/7ndC6G7HyCU/hqdefault.jpg)](https://www.youtube.com/live/7ndC6G7HyCU)
+
+Exodus II presentation video: <https://www.youtube.com/live/7ndC6G7HyCU>
 
 ## Scope
 

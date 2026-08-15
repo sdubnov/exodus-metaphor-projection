@@ -56,6 +56,19 @@
       background: #ffffff;
       border-top: 1px solid #e6eaf0;
     }
+    .video {
+      max-width: 880px;
+      aspect-ratio: 16 / 9;
+      margin: 22px 0 34px;
+      background: #000000;
+      border: 1px solid #d8dee6;
+    }
+    .video iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
     code {
       background: #eef2f6;
       padding: 1px 4px;
@@ -78,6 +91,17 @@
     GitHub's normal file viewer shows HTML source. For interactive online viewing,
     serve this document through GitHub Pages or open it locally.
   </p>
+
+  <h2>Presentation Video</h2>
+
+  <div class="video">
+    <iframe
+      src="https://www.youtube.com/embed/7ndC6G7HyCU"
+      title="Exodus II presentation video"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
 
   <h2>How To Read The Plots</h2>
 
