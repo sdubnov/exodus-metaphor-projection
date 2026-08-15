@@ -47,7 +47,7 @@ GitHub's normal file viewer does not execute HTML or Plotly. For online interact
 - <https://sdubnov.github.io/exodus-metaphor-projection/figures/religious_metaphor_projection.html>
 - <https://sdubnov.github.io/exodus-metaphor-projection/figures/modern_metaphor_projection.html>
 
-The hosted figures use the local Exodus research corpus but hide passage hover text to avoid redistributing source texts that may not be licensed for republication. See [docs/historical_corpus_workflow.md](docs/historical_corpus_workflow.md) for the exact commands used to generate them.
+The hosted figures use the local Exodus research corpus but hide passage hover text to avoid redistributing source texts that may not be licensed for republication. Running the code on the limited sample data included in this repository will verify the workflow, but it will not reproduce the hosted Exodus-corpus figures. See [docs/historical_corpus_workflow.md](docs/historical_corpus_workflow.md) for the exact commands used to generate them.
 
 ## Related Presentation
 
@@ -60,6 +60,12 @@ Click the image to open the Exodus II presentation video.
 The included sample corpus is small and synthetic. To analyze the historical Exodus/Berlin corpus or another research corpus, provide your own local text files through a corpus manifest. See [docs/corpus_notes.md](docs/corpus_notes.md) and [docs/historical_corpus_workflow.md](docs/historical_corpus_workflow.md).
 
 Some texts used in the exploratory paper study may not be redistributable. This repository therefore includes scripts, anchor files, and sample texts rather than the full historical corpus.
+
+## Historical Corpus Access
+
+Due to copyright and licensing restrictions, the complete historical corpus is not publicly redistributed with this code repository. Researchers interested in reproducing or extending the historical corpus analysis may contact Shlomo Dubnov at <sdubnov@ucsd.edu>.
+
+Requests will be handled case by case. Where redistribution is not permitted, the repository provides corpus manifests, source notes, and scripts so that researchers can reconstruct comparable analyses from legally obtained copies of the relevant texts.
 
 ## Repository Layout
 

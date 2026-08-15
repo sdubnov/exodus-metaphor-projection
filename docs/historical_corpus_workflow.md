@@ -2,6 +2,8 @@
 
 This repository does not currently include the original Exodus research corpus.
 
+The small sample corpus committed under `data/sample_corpus/` is only a smoke-test corpus. Running the public repository with that sample data verifies that the pipeline works, but it will not reproduce the hosted Exodus-corpus figures.
+
 The public figures in `docs/figures/` were generated on the local machine from text files under:
 
 ```text
@@ -9,6 +11,8 @@ The public figures in `docs/figures/` were generated on the local machine from t
 ```
 
 Those files were referenced through private manifests under `local_manifests/`. That directory is intentionally ignored by Git because several texts in the exploratory corpus are not clearly redistributable as full text.
+
+The generated public figures are therefore derived artifacts from a local corpus run. They show coordinates and source labels, with passage hover text removed, rather than distributing the corpus itself.
 
 ## How The Hosted Figures Were Generated
 
@@ -85,6 +89,12 @@ This is a practical rights summary, not legal advice.
 - Herzl's *Altneuland* is public domain in the original German; the redistributability of an English text depends on the specific translation. The 1941 Lotta Levensohn translation is marked `PD-US-not-renewed` on Wikimedia Commons: <https://commons.wikimedia.org/wiki/File:Old-New_Land.djvu>.
 
 For that reason, the repository should keep the complete research corpus out of Git unless each file's redistribution status is verified and documented.
+
+## Historical Corpus Access
+
+Due to copyright and licensing restrictions, the complete historical corpus is not publicly redistributed with this code repository. Researchers interested in reproducing or extending the historical corpus analysis may contact Shlomo Dubnov at <sdubnov@ucsd.edu>.
+
+Requests will be handled case by case. Where redistribution is not permitted, the repository provides corpus manifests, source notes, and scripts so that researchers can reconstruct comparable analyses from legally obtained copies of the relevant texts.
 
 ## Recommended Public Position
 

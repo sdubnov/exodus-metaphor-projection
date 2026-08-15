@@ -46,6 +46,8 @@ Expected result:
 - anchor count and chunk counts printed in the terminal
 - `outputs/figures/metaphor_projection.html`
 
+This run uses the small sample corpus included in GitHub. It is a smoke test for the method and code path, not a reproduction of the hosted Exodus-corpus figures.
+
 ## 4. Use Your Own Corpus
 
 Copy `corpus_manifest.example.json` and edit each entry:
