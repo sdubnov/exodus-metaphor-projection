@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+title: "Exodus Metaphor Projection"
+message: "If you use this reference implementation, please cite the associated paper and this software repository."
+type: software
+authors:
+  - family-names: Dubnov
+    given-names: Shlomo
+repository-code: "https://github.com/sdubnov/exodus-metaphor-projection"
+abstract: "Reference implementation for anchor-guided metaphor projection across texts, developed for the Exodus cultural-metaphor study."
+keywords:
+  - metaphor
+  - contrastive learning
+  - digital humanities
+  - text embeddings
+  - Exodus
+license: MIT

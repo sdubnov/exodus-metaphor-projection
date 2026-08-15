@@ -1,0 +1,23 @@
+{
+  "description": "Small synthetic sample corpus for the Exodus metaphor projection demo.",
+  "entries": [
+    {
+      "label": "Narrative",
+      "path": "data/sample_corpus/narrative_liberation.txt",
+      "source": "Synthetic sample text written for the demo.",
+      "redistribution": "included"
+    },
+    {
+      "label": "Philosophy",
+      "path": "data/sample_corpus/philosophical_liberty.txt",
+      "source": "Synthetic sample text written for the demo.",
+      "redistribution": "included"
+    },
+    {
+      "label": "Civic",
+      "path": "data/sample_corpus/civic_liberation.txt",
+      "source": "Synthetic sample text written for the demo.",
+      "redistribution": "included"
+    }
+  ]
+}
