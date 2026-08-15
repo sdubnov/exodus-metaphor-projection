@@ -41,12 +41,9 @@ python scripts/run_metaphor_projection_demo.py \
 
 After running the demo scripts, see [docs/analysis_example.md](docs/analysis_example.md) for an interpretation guide. A local HTML walkthrough is available at [docs/analysis_example.html](docs/analysis_example.html), but the embedded interactive plots require generated files in `outputs/figures/`.
 
-GitHub's normal file viewer does not execute HTML or Plotly. For online interactive viewing, enable GitHub Pages for this repository using the `main` branch and `/docs` folder, then open:
+GitHub's normal file viewer does not execute HTML or Plotly. For online interactive viewing, enable GitHub Pages for this repository using the `main` branch and `/docs` folder, then open the integrated walkthrough:
 
 - <https://sdubnov.github.io/exodus-metaphor-projection/analysis_example.html>
-- <https://sdubnov.github.io/exodus-metaphor-projection/figures/semantic_baseline_3d.html>
-- <https://sdubnov.github.io/exodus-metaphor-projection/figures/religious_metaphor_projection.html>
-- <https://sdubnov.github.io/exodus-metaphor-projection/figures/modern_metaphor_projection.html>
 
 The hosted figures use the local Exodus research corpus but hide passage hover text to avoid redistributing source texts that may not be licensed for republication. Running the code on the limited sample data included in this repository will verify the workflow, but it will not reproduce the hosted Exodus-corpus figures. See [docs/historical_corpus_workflow.md](docs/historical_corpus_workflow.md) for the exact commands used to generate them.
 

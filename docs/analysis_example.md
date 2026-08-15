@@ -23,13 +23,10 @@ python scripts/run_metaphor_projection_demo.py \
   --hide-hover-text
 ```
 
-## Figure Links
+## Interactive Walkthrough
 
-GitHub's normal `blob` file viewer does not execute HTML or Plotly. To view the interactive plots online, use GitHub Pages after it is enabled for this repository:
+GitHub's normal `blob` file viewer does not execute HTML or Plotly. To view the interactive plots online, use the integrated GitHub Pages walkthrough:
 
-- [Religious metaphor projection](https://sdubnov.github.io/exodus-metaphor-projection/figures/religious_metaphor_projection.html)
-- [Modern metaphor projection](https://sdubnov.github.io/exodus-metaphor-projection/figures/modern_metaphor_projection.html)
-- [3D semantic baseline](https://sdubnov.github.io/exodus-metaphor-projection/figures/semantic_baseline_3d.html)
 - [HTML walkthrough](https://sdubnov.github.io/exodus-metaphor-projection/analysis_example.html)
 
 The hosted plots were generated from the local Exodus research corpus, but passage hover text is intentionally hidden so the repository does not redistribute the source texts. For local use with hover text, create a private manifest and run the scripts to `outputs/figures/`.
