@@ -1,0 +1,14 @@
+[
+  {
+    "label": "Exodus",
+    "path": "data/private_corpus/Book_of_Exodus_KJV.txt",
+    "source": "King James Version, Book of Exodus. Public domain in the United States; check local jurisdiction before redistribution.",
+    "redistribution": "local copy supplied by user"
+  },
+  {
+    "label": "Surah Al-Qasas",
+    "path": "data/private_corpus/Surah_Al-Qasas_ClearQuran.txt",
+    "source": "The Clear Quran translation, Surah Al-Qasas. Do not redistribute without permission from the rights holder.",
+    "redistribution": "local analysis only"
+  }
+]

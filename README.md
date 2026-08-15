@@ -47,7 +47,7 @@ GitHub's normal file viewer does not execute HTML or Plotly. For online interact
 - <https://sdubnov.github.io/exodus-metaphor-projection/figures/religious_metaphor_projection.html>
 - <https://sdubnov.github.io/exodus-metaphor-projection/figures/modern_metaphor_projection.html>
 
-The hosted figures use the local Exodus research corpus but hide passage hover text to avoid redistributing source texts that may not be licensed for republication.
+The hosted figures use the local Exodus research corpus but hide passage hover text to avoid redistributing source texts that may not be licensed for republication. See [docs/historical_corpus_workflow.md](docs/historical_corpus_workflow.md) for the exact commands used to generate them.
 
 ## Related Presentation
 
@@ -57,7 +57,7 @@ Click the image to open the Exodus II presentation video.
 
 ## Scope
 
-The included sample corpus is small and synthetic. To analyze the historical Exodus/Berlin corpus or another research corpus, provide your own local text files through a corpus manifest. See [docs/corpus_notes.md](docs/corpus_notes.md).
+The included sample corpus is small and synthetic. To analyze the historical Exodus/Berlin corpus or another research corpus, provide your own local text files through a corpus manifest. See [docs/corpus_notes.md](docs/corpus_notes.md) and [docs/historical_corpus_workflow.md](docs/historical_corpus_workflow.md).
 
 Some texts used in the exploratory paper study may not be redistributable. This repository therefore includes scripts, anchor files, and sample texts rather than the full historical corpus.
 
@@ -65,12 +65,15 @@ Some texts used in the exploratory paper study may not be redistributable. This 
 
 ```text
 data/anchors/       editable metaphor anchor pairs
+data/private_corpus/ ignored local historical texts, if supplied by the user
 data/sample_corpus/ small synthetic corpus for smoke tests
 docs/               method, corpus, and analysis notes
 scripts/            command-line demos
 src/exodus_metaphor reusable implementation modules
 tests/              lightweight tests
 ```
+
+Historical-corpus manifest templates are provided as `corpus_manifest.exodus.*.local.example.json`. They are examples only; complete private text files should remain outside Git unless their redistribution status has been verified.
 
 ## Citation
 

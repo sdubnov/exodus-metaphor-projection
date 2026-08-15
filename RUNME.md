@@ -61,6 +61,14 @@ Copy `corpus_manifest.example.json` and edit each entry:
 
 The scripts accept any UTF-8 `.txt` files.
 
+For the local historical Exodus-corpus workflow used to generate the hosted GitHub Pages figures, see [docs/historical_corpus_workflow.md](docs/historical_corpus_workflow.md).
+
+If the private historical corpus and local manifests are present on this machine, regenerate the hosted figures with:
+
+```bash
+bash scripts/run_historical_figures.sh
+```
+
 ## 5. Offline Model Cache
 
 After the sentence-transformer model has been downloaded once, you can avoid network checks by adding:

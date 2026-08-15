@@ -1,0 +1,20 @@
+[
+  {
+    "label": "Herzl",
+    "path": "data/private_corpus/Herzl_Altneuland_Book_V.txt",
+    "source": "Theodor Herzl, Altneuland / Old-New Land, Book V. Check the license of the exact translation used before redistribution.",
+    "redistribution": "local copy supplied by user"
+  },
+  {
+    "label": "MLK",
+    "path": "data/private_corpus/MLK_Ive_Been_to_the_Mountaintop.txt",
+    "source": "Martin Luther King Jr., \"I've Been to the Mountaintop.\" Do not redistribute without permission from the rights holder.",
+    "redistribution": "local analysis only"
+  },
+  {
+    "label": "Douglass",
+    "path": "data/private_corpus/Frederick_Douglass_Narrative.txt",
+    "source": "Frederick Douglass, Narrative of the Life of Frederick Douglass, an American Slave. Public domain in the United States.",
+    "redistribution": "local copy supplied by user"
+  }
+]
