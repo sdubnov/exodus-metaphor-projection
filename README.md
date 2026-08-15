@@ -46,6 +46,10 @@ python scripts/run_metaphor_projection_demo.py \
 
 After running the demo scripts, see [docs/analysis_example.md](docs/analysis_example.md) for an interpretation guide. A local HTML walkthrough is available at [docs/analysis_example.html](docs/analysis_example.html), but the embedded interactive plots require generated files in `outputs/figures/`.
 
+## Related Presentation
+
+- Exodus II presentation video: <https://www.youtube.com/live/7ndC6G7HyCU>
+
 ## Scope
 
 The included sample corpus is small and synthetic. To analyze the historical Exodus/Berlin corpus or another research corpus, provide your own local text files through a corpus manifest. See [docs/corpus_notes.md](docs/corpus_notes.md).
