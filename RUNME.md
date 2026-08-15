@@ -22,6 +22,15 @@ Expected result:
 - chunk counts printed in the terminal
 - `outputs/figures/semantic_baseline.html`
 
+Optional 3D baseline:
+
+```bash
+python scripts/run_3d_baseline_demo.py \
+  --manifest corpus_manifest.example.json \
+  --output outputs/figures/semantic_baseline_3d.html \
+  --seed 42
+```
+
 ## 3. Run The Metaphor Projection Demo
 
 ```bash

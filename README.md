@@ -35,6 +35,11 @@ python scripts/run_baseline_demo.py \
   --output outputs/figures/semantic_baseline.html \
   --seed 42
 
+python scripts/run_3d_baseline_demo.py \
+  --manifest corpus_manifest.example.json \
+  --output outputs/figures/semantic_baseline_3d.html \
+  --seed 42
+
 python scripts/run_metaphor_projection_demo.py \
   --anchors data/anchors/berlin_liberty_anchor_pairs.csv \
   --manifest corpus_manifest.example.json \
@@ -45,6 +50,13 @@ python scripts/run_metaphor_projection_demo.py \
 ## Analysis Example
 
 After running the demo scripts, see [docs/analysis_example.md](docs/analysis_example.md) for an interpretation guide. A local HTML walkthrough is available at [docs/analysis_example.html](docs/analysis_example.html), but the embedded interactive plots require generated files in `outputs/figures/`.
+
+GitHub's normal file viewer does not execute HTML or Plotly. For online interactive viewing, enable GitHub Pages for this repository using the `main` branch and `/docs` folder, then open:
+
+- <https://sdubnov.github.io/exodus-metaphor-projection/analysis_example.html>
+- <https://sdubnov.github.io/exodus-metaphor-projection/figures/semantic_baseline_3d.html>
+- <https://sdubnov.github.io/exodus-metaphor-projection/figures/semantic_baseline.html>
+- <https://sdubnov.github.io/exodus-metaphor-projection/figures/metaphor_projection.html>
 
 ## Related Presentation
 

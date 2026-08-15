@@ -14,6 +14,11 @@ python scripts/run_baseline_demo.py \
   --output outputs/figures/semantic_baseline.html \
   --seed 42
 
+python scripts/run_3d_baseline_demo.py \
+  --manifest corpus_manifest.example.json \
+  --output outputs/figures/semantic_baseline_3d.html \
+  --seed 42
+
 python scripts/run_metaphor_projection_demo.py \
   --anchors data/anchors/berlin_liberty_anchor_pairs.csv \
   --manifest corpus_manifest.example.json \
@@ -23,8 +28,14 @@ python scripts/run_metaphor_projection_demo.py \
 
 ## Figure Links
 
-- [Semantic baseline](../outputs/figures/semantic_baseline.html)
-- [Metaphor projection](../outputs/figures/metaphor_projection.html)
+GitHub's normal `blob` file viewer does not execute HTML or Plotly. To view the interactive plots online, use GitHub Pages after it is enabled for this repository:
+
+- [3D semantic baseline](https://sdubnov.github.io/exodus-metaphor-projection/figures/semantic_baseline_3d.html)
+- [2D semantic baseline](https://sdubnov.github.io/exodus-metaphor-projection/figures/semantic_baseline.html)
+- [Metaphor projection](https://sdubnov.github.io/exodus-metaphor-projection/figures/metaphor_projection.html)
+- [HTML walkthrough](https://sdubnov.github.io/exodus-metaphor-projection/analysis_example.html)
+
+For local use, run the scripts and open the generated files from `outputs/figures/`.
 
 The same scripts can also be run on local research corpora by creating a new manifest that points to local `.txt` files. Those local manifests should not be committed if the underlying corpus cannot be redistributed.
 
@@ -49,6 +60,10 @@ These visualizations are exploratory and interpretive rather than conclusive. Th
 ### Semantic Baseline
 
 Paragraph-level segments are embedded using a pretrained MiniLM sentence-transformer model and projected into a low-dimensional PCA space. The resulting distribution shows how ordinary semantic representations tend to preserve source-level, stylistic, and lexical differences between texts. This motivates the need for an explicitly metaphor-guided projection rather than relying on generic semantic similarity alone.
+
+### 3D Semantic Baseline
+
+The 3D semantic baseline is the closest didactic counterpart to the paper's initial 3D PCA visualization. It shows the corpus before metaphor-guided training, using three principal components of the MiniLM embedding space. This plot is useful for inspecting whether the corpus separates by source and style before applying the anchor-guided projection.
 
 ### Religious Metaphor Projection
 
