@@ -1,8 +1,14 @@
 # Exodus Metaphor Projection
 
-Reference implementation for an anchor-guided metaphor projection workflow inspired by the Exodus cultural-metaphor study.
+Reference implementation for an anchor-guided metaphor projection workflow developed for the chapter **"Mapping the Cultural Metaphors of Exodus: A Cross-Textual Contrastive Machine Learning Approach"**.
 
-This repository is intended for methodological transparency and reuse. It is not an exact reproduction package for the exploratory figures in the paper.
+The chapter is part of the Springer volume **Exodus II in Transdisciplinary Perspectives**, edited by Thomas Schneider, Brad Sparks, Neil Smith, and Thomas Levy.
+
+## Motivation
+
+The Exodus narrative has become a durable cultural model for thinking about bondage, deliverance, law, covenant, and collective freedom. The chapter asks how computational text methods can help compare this narrative structure with philosophical and political texts that discuss liberty in different genres and historical settings.
+
+This repository provides a small, reusable implementation of the chapter's core methodological idea: manually curated metaphor anchors can define an interpretable projection space in which passages from different texts can be compared. The goal is to support methodological transparency and experimentation, not to provide an exact reproduction archive for every exploratory figure in the chapter.
 
 ## What This Implements
 
@@ -12,8 +18,6 @@ This repository is intended for methodological transparency and reuse. It is not
 - train a small contrastive projection network
 - project additional texts into the learned metaphor space
 - generate interactive HTML plots
-
-Barlow Twins experiments are intentionally excluded from the main implementation.
 
 ## Quick Start
 

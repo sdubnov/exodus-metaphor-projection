@@ -6,7 +6,7 @@ authors:
   - family-names: Dubnov
     given-names: Shlomo
 repository-code: "https://github.com/sdubnov/exodus-metaphor-projection"
-abstract: "Reference implementation for anchor-guided metaphor projection across texts, developed for the Exodus cultural-metaphor study."
+abstract: "Reference implementation for anchor-guided metaphor projection across texts, developed for the chapter 'Mapping the Cultural Metaphors of Exodus: A Cross-Textual Contrastive Machine Learning Approach' in the Springer volume 'Exodus II in Transdisciplinary Perspectives.'"
 keywords:
   - metaphor
   - contrastive learning
