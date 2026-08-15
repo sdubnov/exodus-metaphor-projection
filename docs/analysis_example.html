@@ -56,19 +56,6 @@
       background: #ffffff;
       border-top: 1px solid #e6eaf0;
     }
-    .video {
-      max-width: 880px;
-      aspect-ratio: 16 / 9;
-      margin: 22px 0 34px;
-      background: #000000;
-      border: 1px solid #d8dee6;
-    }
-    .video iframe {
-      width: 100%;
-      height: 100%;
-      border: 0;
-      display: block;
-    }
     code {
       background: #eef2f6;
       padding: 1px 4px;
@@ -92,17 +79,6 @@
     serve this document through GitHub Pages or open it locally.
   </p>
 
-  <h2>Presentation Video</h2>
-
-  <div class="video">
-    <iframe
-      src="https://www.youtube.com/embed/7ndC6G7HyCU"
-      title="Exodus II presentation video"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen>
-    </iframe>
-  </div>
-
   <h2>How To Read The Plots</h2>
 
   <p>
@@ -113,39 +89,13 @@
   </p>
 
   <p>
-    The semantic baseline plots show ordinary MiniLM sentence embeddings projected
-    with PCA. These plots ask whether the corpus is organized mainly by source, style,
-    vocabulary, and genre before any metaphor-guided intervention.
-  </p>
-
-  <p>
-    The metaphor projection plots show the same corpus projected through a learned
+    The figures below show selected Exodus-corpus texts projected through a learned
     two-dimensional contrastive space trained from manually curated liberty-related
     anchor pairs. These plots ask whether passages become comparable under a shared
     metaphorical vocabulary of bondage, deliverance, law, covenant, trial, and self-rule.
   </p>
 
   <h2>Exodus Corpus Demo</h2>
-
-  <div class="figure">
-    <iframe src="figures/semantic_baseline_3d.html"></iframe>
-    <div class="caption">
-      <strong>3D semantic baseline.</strong>
-      The local Exodus research corpus is embedded with MiniLM and projected with
-      PCA into three dimensions. This is the didactic counterpart to the paper's
-      initial 3D baseline: it shows the ordinary semantic geometry before
-      metaphor-guided alignment.
-    </div>
-  </div>
-
-  <div class="figure">
-    <iframe src="figures/semantic_baseline.html"></iframe>
-    <div class="caption">
-      <strong>2D semantic baseline.</strong>
-      The same local corpus is projected into two PCA dimensions. This baseline helps
-      separate ordinary semantic/source organization from metaphor-guided organization.
-    </div>
-  </div>
 
   <div class="figure">
     <iframe src="figures/religious_metaphor_projection.html"></iframe>
@@ -173,12 +123,11 @@
   <h2>Interpretive Summary</h2>
 
   <p>
-    The contrast between the baseline and metaphor-guided projections illustrates the
-    central methodological claim of the study. Generic semantic embeddings tend to
-    preserve differences of source, genre, and vocabulary, making cross-textual
-    conceptual continuities difficult to see. By contrast, the anchor-guided projection
-    reorganizes passages according to a curated metaphorical vocabulary of bondage,
-    deliverance, law, covenant, trial, and self-rule.
+    These plots illustrate the central methodological claim of the study: manually
+    curated metaphor anchors can define an interpretive space for comparing passages
+    across source texts. The anchor-guided projection reorganizes passages according
+    to a curated metaphorical vocabulary of bondage, deliverance, law, covenant,
+    trial, and self-rule.
   </p>
 
   <p>

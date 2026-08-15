@@ -30,16 +30,6 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 
-python scripts/run_baseline_demo.py \
-  --manifest corpus_manifest.example.json \
-  --output outputs/figures/semantic_baseline.html \
-  --seed 42
-
-python scripts/run_3d_baseline_demo.py \
-  --manifest corpus_manifest.example.json \
-  --output outputs/figures/semantic_baseline_3d.html \
-  --seed 42
-
 python scripts/run_metaphor_projection_demo.py \
   --anchors data/anchors/berlin_liberty_anchor_pairs.csv \
   --manifest corpus_manifest.example.json \
@@ -54,8 +44,6 @@ After running the demo scripts, see [docs/analysis_example.md](docs/analysis_exa
 GitHub's normal file viewer does not execute HTML or Plotly. For online interactive viewing, enable GitHub Pages for this repository using the `main` branch and `/docs` folder, then open:
 
 - <https://sdubnov.github.io/exodus-metaphor-projection/analysis_example.html>
-- <https://sdubnov.github.io/exodus-metaphor-projection/figures/semantic_baseline_3d.html>
-- <https://sdubnov.github.io/exodus-metaphor-projection/figures/semantic_baseline.html>
 - <https://sdubnov.github.io/exodus-metaphor-projection/figures/religious_metaphor_projection.html>
 - <https://sdubnov.github.io/exodus-metaphor-projection/figures/modern_metaphor_projection.html>
 
@@ -65,7 +53,7 @@ The hosted figures use the local Exodus research corpus but hide passage hover t
 
 [![Exodus II presentation video](https://img.youtube.com/vi/7ndC6G7HyCU/hqdefault.jpg)](https://www.youtube.com/live/7ndC6G7HyCU)
 
-Exodus II presentation video: <https://www.youtube.com/live/7ndC6G7HyCU>
+Click the image to open the Exodus II presentation video.
 
 ## Scope
 
