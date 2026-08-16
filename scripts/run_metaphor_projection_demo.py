@@ -43,6 +43,24 @@ def parse_args():
         action="store_true",
         help="Use anchor relevance as the y-axis. Useful for sample demos with unrelated control texts.",
     )
+    parser.add_argument(
+        "--anchor-relevance-power",
+        type=float,
+        default=1.0,
+        help="Power transform for the anchor relevance axis; values above 1 emphasize low-relevance controls.",
+    )
+    parser.add_argument(
+        "--anchor-relevance-floor",
+        type=float,
+        default=0.0,
+        help="Subtract a background relevance floor before plotting the relevance axis.",
+    )
+    parser.add_argument(
+        "--anchor-relevance-cap",
+        type=float,
+        default=None,
+        help="Cap the plotted anchor relevance after applying the floor. Useful for visual demos.",
+    )
     parser.add_argument("--epochs", type=int, default=250)
     parser.add_argument("--max-chunks-per-text", type=int, default=80)
     parser.add_argument("--seed", type=int, default=42)
@@ -76,8 +94,23 @@ def main():
     y_label = "Metaphor axis 2"
     title = "Anchor-Guided Metaphor Projection"
     if args.anchor_relevance_axis:
-        points[:, 1] = anchor_relevance_scores(corpus_embeddings, anchor_embeddings, positive_embeddings)
+        relevance = anchor_relevance_scores(corpus_embeddings, anchor_embeddings, positive_embeddings)
+        relevance = relevance - args.anchor_relevance_floor
+        relevance[relevance < 0] = 0
+        if args.anchor_relevance_cap is not None:
+            relevance[relevance > args.anchor_relevance_cap] = args.anchor_relevance_cap
+        points[:, 1] = relevance ** args.anchor_relevance_power
         y_label = "Anchor relevance (max cosine)"
+        if args.anchor_relevance_floor:
+            y_label = f"Anchor relevance above {args.anchor_relevance_floor:g}"
+        if args.anchor_relevance_cap is not None:
+            y_label = f"{y_label}, capped"
+        if args.anchor_relevance_power != 1.0:
+            y_label = f"Anchor relevance^{args.anchor_relevance_power:g}"
+            if args.anchor_relevance_floor:
+                y_label = f"Anchor relevance above {args.anchor_relevance_floor:g}^{args.anchor_relevance_power:g}"
+            if args.anchor_relevance_cap is not None:
+                y_label = f"{y_label}, capped"
         title = "Anchor-Guided Metaphor Projection with Relevance Axis"
     output = write_scatter_html(
         points,

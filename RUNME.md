@@ -4,7 +4,7 @@ The default commands use the small sample corpus included in GitHub. They are in
 
 The sample corpus is designed for a simple comparison: the unguided embedding baseline shows ordinary sentence-embedding structure, while the anchor-guided metaphor projection shows how the same passages move after training the projection on curated Exodus/liberty anchor pairs. The metaphor projection is not expected to preserve source-label clusters; it may bring passages from different files closer when they express related anchor themes.
 
-Sample-demo caption: The unguided embedding baseline tends to separate the synthetic passages by genre and surface vocabulary: narrative, philosophical, civic, and unrelated control passages form different clouds. The anchor-guided metaphor projection with an anchor-relevance axis reorganizes the narrative, philosophical, and civic passages around shared Exodus/liberty concerns such as coercion, departure, law, covenant, agency, and collective future. The unrelated control text is shown in red and remains lower on the relevance axis because it is not strongly related to the curated metaphor anchors.
+Sample-demo caption: The unguided embedding baseline tends to separate the synthetic passages by genre and surface vocabulary: narrative, philosophical, civic, and unrelated control passages form different clouds. The anchor-guided metaphor projection with a thresholded anchor-relevance axis compresses the narrative, philosophical, and civic passages into a shared upper band around Exodus/liberty concerns such as coercion, departure, law, covenant, agency, and collective future. The unrelated control text is shown in red and remains near the bottom because it is not strongly related to the curated metaphor anchors.
 
 ## 1. Create Environment
 
@@ -45,7 +45,9 @@ python scripts/run_metaphor_projection_demo.py \
   --manifest corpus_manifest.example.json \
   --output outputs/figures/metaphor_projection.html \
   --seed 42 \
-  --anchor-relevance-axis
+  --anchor-relevance-axis \
+  --anchor-relevance-floor 0.25 \
+  --anchor-relevance-cap 0.25
 ```
 
 Expected result:
