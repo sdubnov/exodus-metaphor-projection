@@ -6,6 +6,8 @@ The sample corpus is designed for a simple comparison: the unguided embedding ba
 
 Sample-demo caption: The unguided embedding baseline tends to separate the synthetic passages by genre and surface vocabulary: narrative, philosophical, civic, and stylized red-herring control passages form different clouds. The anchor-guided metaphor projection then reorganizes the narrative, philosophical, and civic passages around shared Exodus/liberty concerns such as coercion, departure, law, covenant, agency, and collective future. In the sample demo, passages with low similarity to the curated anchor phrases receive a smooth downward offset, so the stylistically similar but anchor-irrelevant control text, shown in red, is visually separated without imposing hard horizontal bands.
 
+The sample-corpus note in [data/sample_corpus/README.md](data/sample_corpus/README.md) reports the mean anchor-relevance diagnostic for each label. With the default settings, the red-herring control has much lower mean anchor relevance than the Narrative, Philosophy, and Civic samples.
+
 ## 1. Create Environment
 
 ```bash
