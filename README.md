@@ -34,12 +34,13 @@ python scripts/run_metaphor_projection_demo.py \
   --anchors data/anchors/berlin_liberty_anchor_pairs.csv \
   --manifest corpus_manifest.example.json \
   --output outputs/figures/metaphor_projection.html \
-  --seed 42
+  --seed 42 \
+  --anchor-relevance-axis
 ```
 
 For a didactic comparison, also run the unguided embedding baseline in [RUNME.md](RUNME.md). In the terminology used here, the baseline is not called a "semantic" plot because both the baseline and metaphor projection involve meaning. The distinction is between an unguided sentence-embedding/PCA view and an anchor-guided metaphor projection. The metaphor projection should be read as a change in interpretive geometry, not as a claim that source labels must form clean clusters.
 
-Suggested caption for the sample demo: The unguided embedding baseline tends to separate the synthetic passages by genre and surface vocabulary: narrative, philosophical, civic, and unrelated control passages form different clouds. After applying the anchor-guided metaphor projection, the narrative, philosophical, and civic passages are reorganized around shared Exodus/liberty concerns such as coercion, departure, law, covenant, agency, and collective future. The unrelated control text is included to test whether passages outside this metaphorical field remain peripheral. The result illustrates the method's central premise: texts that differ in genre can still be compared through a curated metaphorical mapping.
+Suggested caption for the sample demo: The unguided embedding baseline tends to separate the synthetic passages by genre and surface vocabulary: narrative, philosophical, civic, and unrelated control passages form different clouds. After applying the anchor-guided metaphor projection with an anchor-relevance axis, the narrative, philosophical, and civic passages are reorganized around shared Exodus/liberty concerns such as coercion, departure, law, covenant, agency, and collective future. The unrelated control text is shown in red and remains lower on the relevance axis because it is not strongly related to the curated metaphor anchors. The result illustrates the method's central premise: texts that differ in genre can still be compared through a curated metaphorical mapping, while irrelevant texts can be inspected as a sensitivity check.
 
 ## Historical Analysis Example
 

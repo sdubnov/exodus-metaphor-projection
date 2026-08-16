@@ -7,9 +7,9 @@ from pathlib import Path
 
 COLOR_MAP = {
     "Narrative": "#1f77b4",
-    "Philosophy": "#d62728",
+    "Philosophy": "#984ea3",
     "Civic": "#2ca02c",
-    "RedHerring": "#111111",
+    "RedHerring": "#e41a1c",
     "Exodus": "#1f77b4",
     "Surah": "#d62728",
     "Douglass": "#2ca02c",

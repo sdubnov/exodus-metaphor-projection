@@ -4,7 +4,7 @@ The default commands use the small sample corpus included in GitHub. They are in
 
 The sample corpus is designed for a simple comparison: the unguided embedding baseline shows ordinary sentence-embedding structure, while the anchor-guided metaphor projection shows how the same passages move after training the projection on curated Exodus/liberty anchor pairs. The metaphor projection is not expected to preserve source-label clusters; it may bring passages from different files closer when they express related anchor themes.
 
-Sample-demo caption: The unguided embedding baseline tends to separate the synthetic passages by genre and surface vocabulary: narrative, philosophical, civic, and unrelated control passages form different clouds. The anchor-guided metaphor projection reorganizes the narrative, philosophical, and civic passages around shared Exodus/liberty concerns such as coercion, departure, law, covenant, agency, and collective future. The unrelated control text is included to test whether passages outside this metaphorical field remain peripheral.
+Sample-demo caption: The unguided embedding baseline tends to separate the synthetic passages by genre and surface vocabulary: narrative, philosophical, civic, and unrelated control passages form different clouds. The anchor-guided metaphor projection with an anchor-relevance axis reorganizes the narrative, philosophical, and civic passages around shared Exodus/liberty concerns such as coercion, departure, law, covenant, agency, and collective future. The unrelated control text is shown in red and remains lower on the relevance axis because it is not strongly related to the curated metaphor anchors.
 
 ## 1. Create Environment
 
@@ -44,7 +44,8 @@ python scripts/run_metaphor_projection_demo.py \
   --anchors data/anchors/berlin_liberty_anchor_pairs.csv \
   --manifest corpus_manifest.example.json \
   --output outputs/figures/metaphor_projection.html \
-  --seed 42
+  --seed 42 \
+  --anchor-relevance-axis
 ```
 
 Expected result:
