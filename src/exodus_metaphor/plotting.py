@@ -5,6 +5,31 @@ from __future__ import annotations
 from pathlib import Path
 
 
+COLOR_MAP = {
+    "Narrative": "#1f77b4",
+    "Philosophy": "#d62728",
+    "Civic": "#2ca02c",
+    "RedHerring": "#111111",
+    "Exodus": "#1f77b4",
+    "Surah": "#d62728",
+    "Douglass": "#2ca02c",
+    "MLK": "#9467bd",
+    "Herzl": "#ff7f0e",
+}
+
+SYMBOL_MAP = {
+    "Narrative": "circle",
+    "Philosophy": "diamond",
+    "Civic": "square",
+    "RedHerring": "x",
+    "Exodus": "circle",
+    "Surah": "diamond",
+    "Douglass": "square",
+    "MLK": "cross",
+    "Herzl": "x",
+}
+
+
 def write_scatter_html(
     points,
     labels,
@@ -35,6 +60,9 @@ def write_scatter_html(
         x="x",
         y="y",
         color="label",
+        symbol="label",
+        color_discrete_map=COLOR_MAP,
+        symbol_map=SYMBOL_MAP,
         hover_data=hover_data,
         title=title,
         height=650,
@@ -78,6 +106,9 @@ def write_scatter_3d_html(
         y="y",
         z="z",
         color="label",
+        symbol="label",
+        color_discrete_map=COLOR_MAP,
+        symbol_map=SYMBOL_MAP,
         hover_data=hover_data,
         title=title,
         height=700,
