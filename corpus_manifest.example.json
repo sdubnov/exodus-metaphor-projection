@@ -18,6 +18,12 @@
       "path": "data/sample_corpus/civic_liberation.txt",
       "source": "Synthetic sample text written for the demo.",
       "redistribution": "included"
+    },
+    {
+      "label": "RedHerring",
+      "path": "data/sample_corpus/red_herring_observation.txt",
+      "source": "Synthetic unrelated control text written for the demo.",
+      "redistribution": "included"
     }
   ]
 }

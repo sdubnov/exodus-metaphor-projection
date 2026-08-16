@@ -4,7 +4,7 @@ The default commands use the small sample corpus included in GitHub. They are in
 
 The sample corpus is designed for a simple comparison: the unguided embedding baseline shows ordinary sentence-embedding structure, while the anchor-guided metaphor projection shows how the same passages move after training the projection on curated Exodus/liberty anchor pairs. The metaphor projection is not expected to preserve source-label clusters; it may bring passages from different files closer when they express related anchor themes.
 
-Sample-demo caption: The unguided embedding baseline tends to separate the synthetic passages by genre and surface vocabulary: narrative, philosophical, and civic language form partially distinct clouds. The anchor-guided metaphor projection reorganizes the same passages around shared Exodus/liberty concerns such as coercion, departure, law, covenant, agency, and collective future.
+Sample-demo caption: The unguided embedding baseline tends to separate the synthetic passages by genre and surface vocabulary: narrative, philosophical, civic, and unrelated control passages form different clouds. The anchor-guided metaphor projection reorganizes the narrative, philosophical, and civic passages around shared Exodus/liberty concerns such as coercion, departure, law, covenant, agency, and collective future. The unrelated control text is included to test whether passages outside this metaphorical field remain peripheral.
 
 ## 1. Create Environment
 
