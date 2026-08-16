@@ -61,6 +61,24 @@ def parse_args():
         default=None,
         help="Cap the plotted anchor relevance after applying the floor. Useful for visual demos.",
     )
+    parser.add_argument(
+        "--anchor-relevance-shift",
+        type=float,
+        default=0.0,
+        help="Add a smooth standardized anchor-relevance offset to metaphor axis 2.",
+    )
+    parser.add_argument(
+        "--anchor-irrelevance-threshold",
+        type=float,
+        default=None,
+        help="Background relevance threshold below which passages receive a downward plot offset.",
+    )
+    parser.add_argument(
+        "--anchor-irrelevance-shift",
+        type=float,
+        default=0.0,
+        help="Downward plot offset multiplier for passages below the irrelevance threshold.",
+    )
     parser.add_argument("--epochs", type=int, default=250)
     parser.add_argument("--max-chunks-per-text", type=int, default=80)
     parser.add_argument("--seed", type=int, default=42)
@@ -93,6 +111,7 @@ def main():
     points = project_embeddings(projector, corpus_embeddings)
     y_label = "Metaphor axis 2"
     title = "Anchor-Guided Metaphor Projection"
+    relevance = None
     if args.anchor_relevance_axis:
         relevance = anchor_relevance_scores(corpus_embeddings, anchor_embeddings, positive_embeddings)
         relevance = relevance - args.anchor_relevance_floor
@@ -112,6 +131,19 @@ def main():
             if args.anchor_relevance_cap is not None:
                 y_label = f"{y_label}, capped"
         title = "Anchor-Guided Metaphor Projection with Relevance Axis"
+    elif args.anchor_relevance_shift:
+        relevance = anchor_relevance_scores(corpus_embeddings, anchor_embeddings, positive_embeddings)
+        relevance = (relevance - relevance.mean()) / relevance.std()
+        points[:, 1] = points[:, 1] + (args.anchor_relevance_shift * relevance)
+        y_label = "Metaphor axis 2 + anchor relevance"
+        title = "Anchor-Guided Metaphor Projection with Relevance Weighting"
+    elif args.anchor_irrelevance_shift and args.anchor_irrelevance_threshold is not None:
+        relevance = anchor_relevance_scores(corpus_embeddings, anchor_embeddings, positive_embeddings)
+        penalty = args.anchor_irrelevance_threshold - relevance
+        penalty[penalty < 0] = 0
+        points[:, 1] = points[:, 1] - (args.anchor_irrelevance_shift * penalty)
+        y_label = "Metaphor axis 2 with low-relevance offset"
+        title = "Anchor-Guided Metaphor Projection with Irrelevance Control"
     output = write_scatter_html(
         points,
         labels,
