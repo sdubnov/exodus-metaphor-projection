@@ -39,6 +39,8 @@ python scripts/run_metaphor_projection_demo.py \
 
 For a didactic comparison, also run the unguided embedding baseline in [RUNME.md](RUNME.md). In the terminology used here, the baseline is not called a "semantic" plot because both the baseline and metaphor projection involve meaning. The distinction is between an unguided sentence-embedding/PCA view and an anchor-guided metaphor projection. The metaphor projection should be read as a change in interpretive geometry, not as a claim that source labels must form clean clusters.
 
+Suggested caption for the sample demo: The unguided embedding baseline tends to separate the synthetic passages by genre and surface vocabulary: narrative, philosophical, and civic language form partially distinct clouds. After applying the anchor-guided metaphor projection, the same passages are reorganized around shared Exodus/liberty concerns such as coercion, departure, law, covenant, agency, and collective future. The result illustrates the method's central premise: texts that differ in genre can still be compared through a curated metaphorical mapping.
+
 ## Historical Analysis Example
 
 The hosted analysis page presents figures generated from the local historical Exodus corpus, not from the sample corpus committed to GitHub. See [docs/analysis_example.md](docs/analysis_example.md) for an interpretation guide and [docs/historical_corpus_workflow.md](docs/historical_corpus_workflow.md) for the commands used to generate the hosted figures.
