@@ -65,6 +65,8 @@ The included sample corpus is small and synthetic. To analyze the historical Exo
 
 Some texts used in the exploratory paper study may not be redistributable. This repository therefore includes scripts, anchor files, and sample texts rather than the full historical corpus.
 
+Prospective extensions, including the use of multiple metaphorical maps to compare alternative interpretations of a shared corpus, are collected in [docs/future_directions.md](docs/future_directions.md).
+
 ## Historical Corpus Access
 
 Due to copyright and licensing restrictions, the complete historical corpus is not publicly redistributed with this code repository. Researchers interested in reproducing or extending the historical corpus analysis may contact Shlomo Dubnov at <sdubnov@ucsd.edu>.
